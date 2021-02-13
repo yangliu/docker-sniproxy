@@ -2,6 +2,8 @@ FROM alpine:latest
 
 MAINTAINER i@yangliu.name
 
+ENV NAMESERVER=8.8.8.8
+
 ADD sniproxy.conf /root/
 ADD run.sh /root/
 

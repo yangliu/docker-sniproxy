@@ -8,4 +8,4 @@ echo "Setting the resolver to ${NAMESERVER}..."
 sed -i "/nameserver\s.*/nameserver ${NAMESERVER}/g" /root/sniproxy.conf
 
 echo "Launch sniproxy"
-$(which sniproxy) -c /root/sniproxy -f
+$(which sniproxy) -c /root/sniproxy.conf -f
